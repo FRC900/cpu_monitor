@@ -3,3 +3,9 @@ project(cpu_monitor)
 
 find_package(catkin REQUIRED COMPONENTS rospy)
 catkin_package()
+install(PROGRAMS
+   monitor.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+
